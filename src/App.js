@@ -6,7 +6,8 @@ const STRIPE = {
   pro: "https://buy.stripe.com/7sY6oH6t82sd0cVg7CeEo02",
 };
 
-const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfPmESzdIYlhoHkjkCJBamJidndR9TGkY0oRa7777UAhS-Ivw/viewform?usp=dialog";
+const FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfPmESzdIYlhoHkjkCJBamJidndR9TGkY0oRa7777UAhS-Ivw/viewform?usp=dialog";
 
 function Header() {
   return (
@@ -80,7 +81,7 @@ function Pricing() {
       </div>
 
       <div className="mt-12 text-center text-sm text-gray-600">
-        Après paiement, vous serez redirigé vers la page « Merci » avec le formulaire à remplir.
+        Après paiement, vous serez redirigé vers la page « Merci » pour envoyer vos vidéos.
       </div>
     </section>
   );
@@ -90,7 +91,9 @@ function ThankYou() {
   return (
     <section className="max-w-5xl mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center">Merci pour votre achat 🎾</h2>
-      <p className="text-center text-gray-700 mt-3">Dernière étape : remplissez le formulaire ci-dessous pour m’envoyer vos clips.</p>
+      <p className="text-center text-gray-700 mt-3">
+        Dernière étape : remplissez le formulaire ci-dessous pour m’envoyer vos clips.
+      </p>
 
       <div className="max-w-3xl mx-auto mt-8">
         <iframe
