@@ -142,3 +142,21 @@ export default function App() {
     </BrowserRouter>
   );
 }
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import ThankYou from "./ThankYou"; // <-- ajoute ceci
+
+// ... tes composants Header, Home, Pricing, Footer ...
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/thank-you" element={<ThankYou />} /> {/* <-- la route */}
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+}
